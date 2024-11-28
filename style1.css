@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #f7f7f7;
+}
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-left: 20px;
+}
+.new-arrivals {
+    text-align: center;
+    padding: 40px;
+    background: #e0f7fa;
+}
+.new-arrivals h2 {
+    font-size: 2em;
+    color: #26a69a;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.product {
+    background: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+.newsletter {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #444;
+    color: #fff;
+}
+.newsletter input {
+    margin-right: 10px;
+    padding: 5px;
+}
