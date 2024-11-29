@@ -1,0 +1,74 @@
+.navbar2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky; 
+    z-index: 100000;
+    top: 0px;
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    background-color: white;
+}
+.list{
+    font-weight: 700;
+}
+.navbar2 label{
+    display: none;
+}
+#check{
+    display: none;
+}
+#check:checked~.navbar2 .list{
+    display: block;
+}
+.navbar2 ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.heading{
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+}
+
+.productgrid{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    padding-left: 130px;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+}
+.name{
+    font-weight: bold;
+}
+.price{
+    color: rgb(6, 224, 119);
+    font-weight: 600;
+}
+.stars{
+    color: orange;
+}
+
+
+@media screen and (max-width:800px) {
+    .navbar2{
+        height: 90px;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    .navbar2 label{
+        display: block;
+    }
+    .list{
+        display: none;
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        left: 200px;
+
+    }
+    
+}

@@ -6,6 +6,7 @@
     justify-content:space-between;
     align-items: center;
     color: rgb(131, 144, 155);
+    font-family: "Roboto", sans-serif;
     
 }
 .op1{
@@ -18,7 +19,7 @@
     position: sticky; 
     z-index: 100000;
     top: 0px;
-
+    font-family: "Roboto", sans-serif;
     padding: 10px;
     background-color: white;
 }
@@ -101,6 +102,11 @@
         align-items: center;
         justify-content: center;
     }
+    .footer{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
     
     
 }
@@ -109,6 +115,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: "Roboto", sans-serif;
 }
 .txt{
     padding-left: 200px;
@@ -165,7 +172,8 @@
     grid-template-rows: repeat(2,auto);
     padding-left: 130px;
     height: 100vh;
-    
+    font-family: "Roboto", sans-serif;
+    align-items: center;
 }
 .name{
     font-weight: bold;
@@ -185,12 +193,14 @@
     padding: 20px;
     margin-bottom: 40px;
     background-color: white;
+    font-family: "Roboto", sans-serif;
 }
 .middlebar{
     background-color: rgb(238, 243, 247);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: "Roboto", sans-serif;
 }
 .txt2{
     padding-left: 200px;
@@ -223,6 +233,7 @@
     padding-right: 50px;
     gap: 40px;
     align-items: center;
+    font-family: "Roboto", sans-serif;
 
 }
 .date1{
@@ -275,6 +286,7 @@
     padding-left: 100px;
     padding-top: 80px;
     padding-bottom: 60px;
+    font-family: "Roboto", sans-serif;
 }
 .shoefooter h1{
     font-size: 50px;
@@ -299,6 +311,7 @@
     padding-bottom: 40px;
     padding-right: 60px;
     padding-left: 60px;
+    font-family: "Roboto", sans-serif;
 }
 .middlefooter h1{
     font-size: 20px;
@@ -315,6 +328,7 @@
     color: rgb(131, 142, 152);
     background-color: rgb(25, 24, 24);
     padding: 50px;
+    font-family: "Roboto", sans-serif;
 }
 .sub{
     border-top: none;
