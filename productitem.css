@@ -39,9 +39,11 @@
     height: 100vh;
     font-family: "Roboto", sans-serif;
     align-items: center;
+    
 }
 .name{
     font-weight: bold;
+    
 }
 .price{
     color: rgb(6, 224, 119);

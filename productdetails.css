@@ -1,0 +1,60 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+.sec1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.name{
+    font-size: 80px;
+    font-weight: 700;
+}
+.price{
+    font-size: 30px;
+    color: rgb(6, 224, 119);
+}
+.price b{
+    color: black;
+}
+.stars{
+    color: orange;
+}
+.about{
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+.size{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+}
+.sz button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px ;
+    padding-bottom:5px  ;
+    font-size: 15px;
+    background-color: white;
+
+}
+.sz button:hover {
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    animation-name: disco;
+    animation-duration:1000000s;
+}
+ @keyframes disco{
+    to{
+         font-size:15px ;
+         color: white;
+         background-color: black;
+    }
+    from{
+        font-size:15px ;
+        color: white;
+        background-color: black;
+    }
+} 
