@@ -175,8 +175,23 @@
     font-family: "Roboto", sans-serif;
     align-items: center;
 }
+.productgrid2{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    padding-left: 130px;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    padding-left: 180px;
+    background-color: rgb(230, 231, 232);
+    padding-bottom: 40px;
+    color: black;
+    
+}
 .name{
     font-weight: bold;
+    color: black;
 }
 .price{
     color: rgb(6, 224, 119);
@@ -345,4 +360,76 @@
     border-bottom: none;
     color:rgb(6, 224, 119) ;
 
+}
+.sec1{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Roboto", sans-serif;
+}
+.sec1name{
+    font-size: 80px;
+    font-weight: 700;
+    padding-left: 50px;
+}
+.sec1price{
+    font-size: 30px;
+    color: rgb(6, 224, 119);
+    padding-left: 50px;
+}
+.sec1price b{
+    color: black;
+}
+.sec1stars{
+    color: orange;
+    padding-left: 50px;
+}
+.sec1about{
+    text-decoration: underline;
+    text-decoration-style: solid;
+    padding-left: 50px;
+}
+.sec1details{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: -10px;
+    padding-bottom: 30px;
+}
+.sec1size{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+    
+}
+.sz button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px ;
+    padding-bottom:5px  ;
+    font-size: 15px;
+    background-color: white;
+
+}
+.sz button:hover {
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    animation-name: disco;
+    animation-duration:1000000s;
+}
+ @keyframes disco{
+    to{
+         font-size:15px ;
+         color: white;
+         background-color: black;
+    }
+    from{
+        font-size:15px ;
+        color: white;
+        background-color: black;
+    }
+} 
+.sec2{
+    display: flex;
+    justify-content: space-around;
 }
