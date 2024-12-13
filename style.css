@@ -78,8 +78,12 @@
         justify-content: center;
     }
     .productgrid{
-        grid-template-columns: repeat(2,auto);
-        grid-template-rows: repeat(2,auto);
+        grid-template-columns: repeat(1,auto);
+        /* grid-template-rows: repeat(2,auto); */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
         
     }
     .View{
@@ -171,7 +175,7 @@
     grid-template-columns: repeat(4,auto);
     grid-template-rows: repeat(2,auto);
     padding-left: 130px;
-    height: 100vh;
+    /* height: 100vh; */
     font-family: "Roboto", sans-serif;
     align-items: center;
 }
@@ -180,7 +184,7 @@
     grid-template-columns: repeat(3,auto);
     grid-template-rows: repeat(3,auto);
     padding-left: 130px;
-    height: 100vh;
+    /* height: 100vh; */
     font-family: "Roboto", sans-serif;
     align-items: center;
     padding-left: 180px;
@@ -188,6 +192,21 @@
     padding-bottom: 40px;
     color: black;
     
+}
+
+@media screen and (max-width: 800px) {
+    .productgrid{
+        
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+       
+    }
+    .productgrid2{
+        
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+       
+    }
 }
 .name{
     font-weight: bold;
@@ -209,6 +228,9 @@
     margin-bottom: 40px;
     background-color: white;
     font-family: "Roboto", sans-serif;
+}
+.View:hover{
+    background-color: blue;
 }
 .middlebar{
     background-color: rgb(238, 243, 247);
@@ -459,6 +481,26 @@
     animation-name: disc;
     animation-duration:1000000s;
 }
+@media screen and (max-width: 800px) {
+    .sec1{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .sec2{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .sec3{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+
  @keyframes disc{
     to{
          font-size:25px ;
@@ -612,17 +654,17 @@
 .sec22a1b1c7:hover{
     background-color: green;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 800px) {
     
     .sec22a1{
-        width: 100%;
+        width: 80%;
         padding: 5px;
     }
     .sec22a1b1{
         margin-bottom: -10px;
     }
     .sec22a1b1c1{
-        width: 100%;
+        width: 80%;
         padding: 8px 0 8px 40px;
         margin-bottom: 10px;
     }
@@ -637,4 +679,52 @@
 
 .address{
     margin: 5px auto;
+}
+
+.bd {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6e6ea;
+}
+.confirmation-container {
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+.confirmation-container h1 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+.confirmation-container p {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+.confirmation-container a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    background-color: #4CAF50;
+    text-decoration: none;
+    border-radius: 4px;
+    /* transition: background-color 0.3s ease; */
+}
+.confirmation-container a:hover {
+    background-color: #45a049;
+}
+@media screen and (max-width:800px) {
+    .confirmation-container{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+    }
 }
